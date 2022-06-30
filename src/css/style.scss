@@ -1,0 +1,44 @@
+// TEXT
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit&family=Ubuntu&family=Work+Sans&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Additional styles
+@import 'additional-styles/utility-patterns.scss';
+@import 'additional-styles/range-slider.scss';
+@import 'additional-styles/toggle-switch.scss';
+@import 'additional-styles/theme.scss';
+
+
+
+
+@layer base {
+    html {
+      font-family: 'Work sans', sans-serif;
+    }
+}
+// Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+
+// See Alpine.js: https://github.com/alpinejs/alpine#x-cloak
+[x-cloak] {
+    display: none;
+}
+
+// AOS styles
+$aos-distance: 10px;
+@import 'node_modules/aos/src/sass/aos.scss';
+
+
